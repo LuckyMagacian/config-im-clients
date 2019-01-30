@@ -1,0 +1,14 @@
+
+registry:
+  host: localhost
+  port: 10000
+
+eureka:
+  instance:
+    hostname: localhost
+    appname: im-client
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${registry.host}:${registry.port}/eureka
