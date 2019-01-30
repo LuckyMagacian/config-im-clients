@@ -10,7 +10,7 @@ spring:
   application:
     name: im-client
   profiles:
-    include: consul
+    include: consul,redis
 
 management:
   endpoints:
