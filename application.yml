@@ -3,14 +3,14 @@ server:
 cache: ribbon
 
 default:
-  user: root
-  password: 123456
+  user: {cipher}3266140c6524da9cd60342540dbea65bbfd26e808a9cc76276d589ee6ed4346f
+  password: {cipher}bb749e93e727ba08d7a24ebae6b5bfcac9c6bce893ee06775884590657356b9d
 
 spring:
   application:
     name: im-client
   profiles:
-    include: consul,redis
+    include: consul
 
 management:
   endpoints:
